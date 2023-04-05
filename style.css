@@ -1,0 +1,200 @@
+@font-face {
+	font-family: GreatVibes;
+	src: url("GreatVibes-Regular.ttf");
+    font-display: auto;
+}
+
+body {
+	height: 200vh;
+	background-image: linear-gradient(to top right, black, red);
+	background-repeat: no-repeat;
+	background-size: 102vw 200%;
+	overflow: auto;
+}
+
+h1,p {
+	color: white;
+	font-family: Sans-Serif;
+}
+#Top {
+	position: absolute;
+	background-color: red;
+	background-image: radial-gradient(at center, red,black);
+	height: 10vh;
+	width: 102vw;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+#Titre {
+	position: absolute;
+	display: inline;
+	color: white;
+	top: calc(50% - 2vw);
+	font-size: 5vw;
+	font-family: GreatVibes;
+}
+
+#Logo {
+	position: absolute;
+	float: center;
+	height: 95%;
+	border-radius: 50%;
+	left: calc(50vw - 2vw);
+	top: 0;
+    border: 3px dashed white;
+}
+
+#Commande {
+	display: flex;
+	position: absolute;
+	font-family: GreatVibes;
+	color: white;
+    right: 27vw;
+    height: 12vh;
+    align-items: center;
+
+}
+
+#Commande-Logo {
+    width: auto;
+    height: 6vh;
+    margin-left: 3vw;
+    margin-bottom: 1vw;
+}
+
+#Commande-Texte {
+    font-size: 5vw;
+}
+
+
+.ImageContainer {
+	width: 51vw;
+	height: auto;
+	max-height: 100vh;
+}
+
+#Annonce1, #Annonce5 {
+	width: 51vw;
+}
+div {
+	grid-area: content;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 100%;
+}
+
+#Content {
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 8%;
+	width: 102vw;
+	height: 100vh;
+}
+#Content iframe {
+	height: 100%;
+	overflow: scroll;
+}
+footer {
+	text-align: center;
+	width: 102vw;
+    background-color: black;
+}
+footer img {
+	margin-right: 4vw;
+}
+
+#AboutContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+#AboutContainer button {
+	background-color: transparent;
+	font-size: 55pt;
+	color: white;
+	width: 60%;
+}
+
+.ValeursContainer h1 {
+	text-align: center;
+	text-decoration: underline;
+	background-color: transparent;
+}
+.ValeursContainer p {
+	font-size: 22pt;
+	text-align: center;
+	text-justify: auto;
+	background-color: transparent;
+	height: auto;
+	overflow: auto;
+}
+#Menu {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	list-style: square inside;
+	color: white;
+	font-size: 32pt;
+	text-align: center;
+	font-weight: bold;
+	text-decoration: underline;
+	overflow: scroll;
+}
+h1 {
+	text-decoration: underline;
+	text-align: center;
+	font-size: 32pt;
+}
+
+#Menu span {
+	height: 26vh;
+	border-top: 3px outset white;
+	background-size: 102vw 40vw;
+}
+#Menu span span {
+	display: flex;
+	font-size: 22pt;
+	font-weight: bold;
+	height: 25vh;
+	justify-content: center;
+	align-items: center;
+}
+#Menu span span,h4,label,h1 {
+	background-image: radial-gradient(at center, black,red 5%, darkorange);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+
+
+h5 {
+	color: white;
+}
+a {
+	text-decoration: none;
+	color: white !important;
+}
+#Commande {
+	width: 6%;
+}
+
+#SubContent {
+	height: 200vh;
+}
+.logosContainer {
+	position: relative;
+	width: 100vw;
+	left: 2vw;
+}
+
+hr {
+	border: 1px solid white;
+}
+.ImageContainer, #Annonce1, #Annonce5,#Foot, #Top {
+	border-top: 3px inset white;
+	border-bottom: 3px inset white;
+}
